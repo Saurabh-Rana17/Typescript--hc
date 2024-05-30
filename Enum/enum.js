@@ -1,0 +1,2 @@
+var role;
+role = "admin";
