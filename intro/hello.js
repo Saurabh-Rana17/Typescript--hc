@@ -1,4 +1,2 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var username = 'saurabh';
-console.log('hello', username.toUpperCase());
+var n = 473467.3748;
+console.log(n.toString());
