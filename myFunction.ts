@@ -29,17 +29,34 @@ type User = {
     test?:number
 }
 
-function createUser(user:User){
-    let u:User = { email:'ds',isActive:true,name:'ds',id:'dsudus'}
-    return u
+type Special = {
+    role:string,
+    isAdmin:boolean
 }
-let user = 'ds'
-createUser({name :'',email:'ds',isActive:true,id:'dsgh'})
-const newUser:User = {
-    email:'',
-    id:'',
-    isActive:false,
-    name:''
+type Admin = User  & Special
+
+// const head:Admin = {}
+type ArrObj = {
+    val1:number
+    val2:string
 }
-newUser.email ='dhs'
-console.log(newUser.test)
+const numArr:number[] = [3,435,6,656,6]
+const objArr:ArrObj[] = [{val2:'ds',val1:8}]
+console.log(objArr)
+objArr.push({val1:0,val2:''})
+// numArr.push('s')
+
+// function createUser(user:User){
+//     let u:User = { email:'ds',isActive:true,name:'ds',id:'dsudus'}
+//     return u
+// }
+// let user = 'ds'
+// createUser({name :'',email:'ds',isActive:true,id:'dsgh'})
+// const newUser:User = {
+//     email:'',
+//     id:'',
+//     isActive:false,
+//     name:''
+// }
+// newUser.email ='dhs'
+// console.log(newUser.test)
