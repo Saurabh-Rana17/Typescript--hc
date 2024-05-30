@@ -1,6 +1,6 @@
-export {}
+export { }
 // function addTwo(num:number):number{
-    
+
 //     return num+2
 // }
 
@@ -22,28 +22,28 @@ export {}
 // createUser({name:32,no:3})
 
 type User = {
-    name:string
-    email:string
-    isActive:boolean
-    readonly id :string
-    test?:number
+    name: string
+    email: string
+    isActive: boolean
+    readonly id: string
+    test?: number
 }
 
 type Special = {
-    role:string,
-    isAdmin:boolean
+    role: string,
+    isAdmin: boolean
 }
-type Admin = User  & Special
+type Admin = User & Special
 
 // const head:Admin = {}
 type ArrObj = {
-    val1:number
-    val2:string
+    val1: number
+    val2: string
 }
-const numArr:number[] = [3,435,6,656,6]
-const objArr:ArrObj[] = [{val2:'ds',val1:8}]
+const numArr: number[] = [3, 435, 6, 656, 6]
+const objArr: ArrObj[] = [{ val2: 'ds', val1: 8 }]
 console.log(objArr)
-objArr.push({val1:0,val2:''})
+objArr.push({ val1: 0, val2: '' })
 // numArr.push('s')
 
 // function createUser(user:User){
