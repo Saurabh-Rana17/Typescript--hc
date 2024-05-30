@@ -21,3 +21,25 @@ export {}
 
 // createUser({name:32,no:3})
 
+type User = {
+    name:string
+    email:string
+    isActive:boolean
+    readonly id :string
+    test?:number
+}
+
+function createUser(user:User){
+    let u:User = { email:'ds',isActive:true,name:'ds',id:'dsudus'}
+    return u
+}
+let user = 'ds'
+createUser({name :'',email:'ds',isActive:true,id:'dsgh'})
+const newUser:User = {
+    email:'',
+    id:'',
+    isActive:false,
+    name:''
+}
+newUser.email ='dhs'
+console.log(newUser.test)
