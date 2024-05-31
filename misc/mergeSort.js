@@ -11,17 +11,23 @@ function mergeSort(arr) {
 }
 function merge(left, right) {
     var res = [];
-    var leftidx = 0;
-    var rightidx = 0;
-    while (leftidx < left.length && rightidx < right.length) {
-        if (left[leftidx] < right[rightidx]) {
-            res.push(left[leftidx]);
-            leftidx++;
+    var li = 0;
+    var ri = 0;
+    while (li < left.length && ri < right.length) {
+        if (left[li] < right[ri]) {
+            res.push(left[li]);
+            li++;
         }
         else {
-            res.push(right[rightidx]);
-            rightidx++;
+            res.push(right[ri]);
+            ri++;
         }
     }
-    return res.concat(left.slice(leftidx)).concat(right.slice(rightidx));
+    if (li < left.length) {
+        res = res.concat(left.slice(li));
+    }
+    else {
+        res = res.concat(right.slice(ri));
+    }
+    return res;
 }
