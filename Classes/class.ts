@@ -3,7 +3,7 @@ console.clear();
 
 class User {
   private courseCount = 1;
-  private name: string;
+  protected name: string;
   email: string;
   readonly city: string = "";
   constructor(name: string, email: string) {
@@ -28,6 +28,12 @@ class User {
       throw new Error("Value cannot be less than 0");
     }
     this.courseCount = input;
+  }
+}
+
+class SubUser extends User {
+  logger(): void {
+    console.log("this is", this.city);
   }
 }
 
