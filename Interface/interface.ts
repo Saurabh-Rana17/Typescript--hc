@@ -48,7 +48,7 @@ const teacher: person = {
   act(ds) {
     return "acting";
   },
-  greet: () => "hello",
+  greet: () => "",
   age: 7,
   name: "dsa",
 };

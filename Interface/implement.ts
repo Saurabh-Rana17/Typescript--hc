@@ -16,12 +16,17 @@ class Social implements TakePhoto {
   ) {}
 }
 
-class Youtube implements TakePhoto, ShortVideo {
+class Youtube implements Social {
   constructor(
     public camera: string,
     public filter: boolean,
     public burst: number
   ) {}
+  // constructor(
+  //   public camera: string,
+  //   public filter: boolean,
+  //   public burst: number
+  // ) {}
   playVdeo(): string {
     return "playing video";
   }
