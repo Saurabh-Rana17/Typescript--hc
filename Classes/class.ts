@@ -2,16 +2,11 @@ export {};
 console.clear();
 
 class User {
-  private courseCount = 1;
-  protected name: string;
-  email: string;
+  protected courseCount = 1;
   readonly city: string = "";
-  constructor(name: string, email: string) {
-    this.name = name;
-    this.email = email;
-  }
+  constructor(public name: string, public email: string) {}
 
-  logName() {
+  logName(): void {
     console.log(`my name is ${this.name} and my email is ${this.email}`);
   }
 
@@ -35,10 +30,10 @@ class SubUser extends User {
   logger(): void {
     console.log("this is", this.city);
   }
+  changeCount(): void {
+    this.courseCount = 10;
+  }
 }
 
 const person = new User("saurabh", "saurabh@gmail.com");
-
-console.log(person.getCourseCount);
-person.setCourseCount = 10;
-console.log(person.getCourseCount);
+const person2 = new SubUser("wkjesj", "fsk@hfhdks");
