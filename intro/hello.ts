@@ -1,2 +1,3 @@
-let n:number = 473467.3748
-console.log(n.toString())
+let n: number = 473467.3748;
+console.log(n.toString());
+export {};
